@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_mycart"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+
+        android:src="@drawable/ic_ecommerce"/>
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_edit_text"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_edit_text"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Enter OTP"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/createNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical"
+        android:text="Create new account"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_signup_btn"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="SEND OTP"
+        android:textStyle="bold"
+        app:backgroundTint="#5CB14D" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_signInwithGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_google"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Google"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/SignInwithFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Facebook"
+            android:textStyle="bold"
+            app:backgroundTint="#3F51B5"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_signInWithEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Sign In With Email"
+        android:textColor="#127C0E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
