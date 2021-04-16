@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_bg_mycart"
+    android:background="@color/black"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SignInActivity">
@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="10dp"
 
-        android:src="@drawable/ic_ecommerce"/>
+        android:src="@drawable/aapkatradition"/>
 
     <EditText
         android:id="@+id/et_phone_number"
@@ -61,7 +61,7 @@
         android:layout_marginRight="30dp"
         android:gravity="center_vertical"
         android:text="Create new account"
-        android:textColor="@color/black"
+        android:textColor="#FD9E39"
         android:textSize="18sp" />
 
     <Button
@@ -75,7 +75,7 @@
         android:paddingRight="25dp"
         android:text="SEND OTP"
         android:textStyle="bold"
-        app:backgroundTint="#5CB14D" />
+        app:backgroundTint="#FD9E39" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Sign In With Email"
-        android:textColor="#127C0E"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
