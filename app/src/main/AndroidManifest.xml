@@ -11,20 +11,23 @@
         android:roundIcon="@drawable/ic_ecommerce"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCartECommerce">
-        <activity android:name=".Activities.SignInWithPhoneActivity"></activity>
-        <activity
-            android:name=".Activities.ItemDetailActivity"
-            android:parentActivityName=".HomeActivity"></activity>
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/Theme.MyCartECommerce.NoActionBar" />
-        <activity android:name=".SignInActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SignInWithPhoneActivity" />
+        <activity
+            android:name=".Activities.ItemDetailActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.MyCartECommerce.NoActionBar" />
+        <activity android:name=".SignInActivity">
+
         </activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
