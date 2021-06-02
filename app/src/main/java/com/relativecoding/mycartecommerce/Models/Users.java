@@ -3,15 +3,18 @@ package com.relativecoding.mycartecommerce.Models;
 public class Users {
     String profilePic, username, mail, password, lastMessage,userId;
 
-    public Users(String profilePic, String username, String mail, String password, String lastMessage, String userId) {
+    String number, address;
+
+    public Users(String profilePic, String username, String mail, String password, String lastMessage, String userId, String number, String address) {
         this.profilePic = profilePic;
         this.username = username;
         this.mail = mail;
         this.password = password;
         this.lastMessage = lastMessage;
         this.userId = userId;
+        this.number = number;
+        this.address = address;
     }
-
     //empty constructor for firebase
 
     public Users() {
@@ -75,4 +78,19 @@ public class Users {
     }
 
 
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

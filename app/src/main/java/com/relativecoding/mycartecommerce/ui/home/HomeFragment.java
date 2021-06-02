@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -79,8 +81,8 @@ public class HomeFragment extends Fragment {
         DividerItemDecoration Vdivider = new DividerItemDecoration(binding.recyclerView.getContext(), DividerItemDecoration.VERTICAL);
         Hdivider.setDrawable(ContextCompat.getDrawable(getContext(), R.drawable.divider));
         Vdivider.setDrawable(ContextCompat.getDrawable(getContext(), R.drawable.divider));
-        binding.recyclerView.addItemDecoration(Hdivider);
-        binding.recyclerView.addItemDecoration(Vdivider);
+//        binding.recyclerView.addItemDecoration(Hdivider);
+//        binding.recyclerView.addItemDecoration(Vdivider);
 
         database=FirebaseDatabase.getInstance();
         reference=database.getReference();
@@ -134,6 +136,7 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
 
 
         return binding.getRoot();

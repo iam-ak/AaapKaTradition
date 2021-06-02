@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/aapkatradition"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCartECommerce">
+        <activity android:name=".Activities.BuyingActivity"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,9 +27,7 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.MyCartECommerce.NoActionBar" />
-        <activity android:name=".SignInActivity">
-
-        </activity>
+        <activity android:name=".SignInActivity"></activity>
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
     </application>
